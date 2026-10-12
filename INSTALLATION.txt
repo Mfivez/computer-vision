@@ -1,0 +1,81 @@
+COMPUTER VISION — OUVRIR ET EXÉCUTER LE COURS
+
+Tout fonctionne dans VS Code avec Python local, sur le processeur du PC.
+Docker, carte graphique, webcam et compte cloud ne sont pas nécessaires.
+Les notebooks ne téléchargent rien et ne réentraînent aucun modèle.
+
+OUVRIR LE BON DOSSIER
+Dans VS Code : Fichier > Ouvrir un dossier > le dossier téléchargé ou cloné.
+Les dossiers notebooks, modeles et donnees doivent être visibles à la racine.
+Installer les extensions officielles Microsoft « Python » et « Jupyter ».
+Ouvrir un terminal PowerShell dans ce dossier.
+
+CRÉER L'ENVIRONNEMENT SUR UN AUTRE PC
+Utiliser Python 3.12, Windows 64 bits. Ne pas copier un .venv depuis un autre PC :
+il contient des chemins propres à la machine où il a été créé.
+Vérifier les installations Python présentes :
+  py -0p
+
+Si aucun .venv n'existe encore dans le projet :
+  py -3.12 -m venv .venv
+
+Installer les bibliothèques depuis les versions vérifiées :
+  .\.venv\Scripts\python.exe -m pip install -r requirements-lock.txt
+  .\.venv\Scripts\python.exe -m pip check
+
+L'installation exige Internet. Le suffixe +cpu des paquets torch et torchvision
+désigne les versions pour processeur, récupérées sur l'index officiel PyTorch.
+requirements.txt donne les dépendances directes ; requirements-lock.txt fige
+aussi les dépendances indirectes de l'environnement Windows Python 3.12 testé.
+L'appel explicite à .venv évite de modifier les bibliothèques d'un autre projet.
+Il n'est pas nécessaire d'activer le venv ni de changer la politique PowerShell.
+
+VÉRIFIER LES IMAGES ET LES MODÈLES
+Les deux photos et les deux modèles sont fournis avec le cours. Les vérifier :
+  .\.venv\Scripts\python.exe scripts\prepare_assets.py --check
+
+Si des ressources manquent, les récupérer explicitement depuis les sources
+officielles figées dans ressources/assets_manifest.json :
+  .\.venv\Scripts\python.exe scripts\prepare_assets.py --download
+
+Ce script vérifie les empreintes SHA-256 et ne remplace aucun fichier existant.
+Une empreinte différente demande d'abord de vérifier la provenance du fichier.
+Les fichiers .pt peuvent contenir des objets Python : ne pas ouvrir des poids
+reçus d'une source inconnue. Lire SOURCES.txt avant de réutiliser les ressources.
+
+CHOISIR PYTHON DANS VS CODE
+Ctrl+Maj+P > Python: Select Interpreter > choisir .venv.
+Si absent : Enter interpreter path > Find > .venv\Scripts\python.exe.
+Ouvrir notebooks/01_comprendre_et_preparer_une_image.ipynb.
+En haut à droite : Select Kernel > Python Environments > le même .venv.
+Le choix du noyau du notebook est distinct de celui du terminal.
+
+Au besoin, enregistrer un nom explicite pour ce noyau :
+  .\.venv\Scripts\python.exe -m ipykernel install --user --name computer-vision --display-name "Python (computer_vision)"
+Puis sélectionner « Python (computer_vision) » et recharger VS Code si nécessaire.
+
+PARCOURIR LES NOTEBOOKS
+01 — Comprendre et préparer une image : pixels, couleurs, coordonnées, OpenCV.
+02 — Classer une image : une étiquette globale et des scores à interpréter.
+03 — Détecter avec YOLO : plusieurs objets, leurs positions et leurs scores.
+04 — Atelier : relier ces opérations et produire un compte-rendu prudent.
+
+Dans chaque notebook, exécuter les cellules dans l'ordre, du haut vers le bas.
+Les schémas et les figures de référence sont des images locales déjà présentes :
+elles s'affichent même avant l'exécution. Ne pas ouvrir un notebook isolé hors
+de ce dossier : conserver ressources/ à côté de notebooks/.
+Une figure de référence est un exemple enregistré, pas une sortie recalculée
+quand vous changez le code. Comparez-la aux résultats de votre propre exécution.
+« Restart Kernel and Run All » vérifie que l'ensemble fonctionne sans dépendre
+de variables laissées par une exécution précédente. Les exercices non remplis
+restent exécutables et affichent ce qu'il reste à compléter.
+Les résultats personnels vont dans travaux/, jamais dans donnees/ ou modeles/.
+
+SI UNE ERREUR APPARAÎT
+« No module named ... » : vérifier le noyau sélectionné et pip check.
+Fichier introuvable : ouvrir le dossier complet, pas un notebook isolé.
+Modèle absent : lancer prepare_assets.py --check, puis --download si nécessaire.
+Erreur DLL PyTorch : vérifier Windows 64 bits et installer le redistribuable
+Microsoft Visual C++ 2015–2022 x64 depuis le site officiel Microsoft :
+https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist
+Ne pas remplacer au hasard les versions épinglées ni utiliser un fichier .pt inconnu.

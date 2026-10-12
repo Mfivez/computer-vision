@@ -1,0 +1,7 @@
+* text=auto eol=lf
+/donnees/** -text
+/modeles/** -text
+/ressources/licences/** -text
+*.pt binary
+*.jpg binary
+*.png binary

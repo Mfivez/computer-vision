@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
+<title id="title">Comparer les propositions à une référence connue</title><desc id="desc">Scène pédagogique inventée. La référence contient trois personnes A B C. Le modèle propose des boîtes autour de A, de B et d’un panneau. La personne C est omise. Deux vrais positifs, un faux positif, un faux négatif.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#243b53"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#243b53;font-size:20px}.title{font-size:28px;font-weight:bold}.small{font-size:17px}.bold{font-weight:bold}.card{fill:#fff;stroke:#ccd8e3;stroke-width:2}.axis{stroke:#243b53;stroke-width:2;marker-end:url(#arrow)}</style>
+<rect width="1000" height="500" rx="18" fill="#f4f8fc"/>
+<text x="30" y="42" class="title">Comparer les propositions à une référence connue</text>
+
+<text x="35" y="84">Scène inventée : la référence contient trois personnes, A, B et C.</text>
+<rect x="35" y="108" width="930" height="285" rx="12" class="card"/>
+<path d="M60 355 H940" stroke="#ccd8e3" stroke-width="3"/>
+<g fill="#627d98" stroke="#627d98" stroke-width="12">
+<circle cx="147" cy="183" r="20"/><path d="M147 210 V282 M113 239 H181 M147 282 L117 340 M147 282 L177 340" fill="none"/>
+<circle cx="357" cy="183" r="20"/><path d="M357 210 V282 M323 239 H391 M357 282 L327 340 M357 282 L387 340" fill="none"/>
+<circle cx="567" cy="183" r="20"/><path d="M567 210 V282 M533 239 H601 M567 282 L537 340 M567 282 L597 340" fill="none"/>
+</g>
+<rect x="790" y="180" width="83" height="74" rx="5" fill="#e8c289" stroke="#906834" stroke-width="3"/><path d="M832 255 V345" stroke="#906834" stroke-width="10"/>
+<rect x="95" y="146" width="104" height="204" fill="none" stroke="#627d98" stroke-width="3" stroke-dasharray="8 5"/>
+<rect x="305" y="146" width="104" height="204" fill="none" stroke="#627d98" stroke-width="3" stroke-dasharray="8 5"/>
+<rect x="515" y="146" width="104" height="204" fill="none" stroke="#627d98" stroke-width="3" stroke-dasharray="8 5"/>
+<rect x="89" y="141" width="112" height="212" fill="none" stroke="#07849a" stroke-width="4"/>
+<rect x="299" y="141" width="112" height="212" fill="none" stroke="#07849a" stroke-width="4"/>
+<rect x="777" y="161" width="111" height="193" fill="none" stroke="#d05a0b" stroke-width="4"/>
+<text x="91" y="133" class="small">person 0,91</text><text x="301" y="133" class="small">person 0,84</text><text x="779" y="152" class="small">person 0,73</text>
+<text x="114" y="380">A</text><text x="324" y="380">B</text><text x="534" y="380">C</text><text x="790" y="380">Panneau</text>
+<path d="M39 427 H94" stroke="#627d98" stroke-width="3" stroke-dasharray="8 5"/><text x="105" y="433" class="small">Référence dessinée à la main</text>
+<path d="M420 427 H473" stroke="#07849a" stroke-width="4"/><text x="485" y="433" class="small">Proposition sur une personne</text>
+<path d="M39 464 H94" stroke="#d05a0b" stroke-width="4"/><text x="105" y="470" class="small">Proposition sur un panneau, annoncée comme une personne</text>
+
+</svg>

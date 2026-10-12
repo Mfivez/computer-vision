@@ -1,0 +1,32 @@
+.venv/
+venv/
+travaux/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.vscode/
+.idea/
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+*.bak
+*.zip
+.DS_Store
+Thumbs.db
+Desktop.ini
+mission.md
+
+# Annexes de préparation : ne pas publier avec le cours.
+/PARCOURS.*
+/FICHE_RECAPITULATIVE.*
+/VALIDATION.*
+/README.*
+
+# Corrigés, rapports et outils internes conservés uniquement en local.
+/corrections/
+/scripts/verify_course.py
+/scripts/export_figures.py
+/ressources/figures_statiques.json

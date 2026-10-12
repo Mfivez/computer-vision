@@ -1,0 +1,80 @@
+COMPUTER VISION — SOURCES ET RESSOURCES
+
+Le cours utilise un choix explicite et reproductible : YOLO11n et YOLO11n-cls,
+avec Ultralytics 8.3.221. Ce n'est pas une affirmation de dernière version.
+Les schémas du cours sont des illustrations pédagogiques originales ; les
+photographies et les modèles ci-dessous proviennent des sources indiquées.
+Les 11 PNG de résultats sont calculés localement à partir des cellules exécutées
+et du prétraitement réel des poids fournis. Ils ne sont pas des prédictions
+inventées. Leurs légendes les relient aux calculs présentés dans les notebooks.
+Les vues dérivées des photos gardent les mêmes précautions de réutilisation.
+
+IMAGES ET MODÈLES FOURNIS
+Toutes les URL exactes, tailles en octets et empreintes SHA-256 sont dans :
+  ressources/assets_manifest.json
+
+Poids : dépôt officiel ultralytics/assets, release v8.3.0.
+  https://github.com/ultralytics/assets/releases/tag/v8.3.0
+  https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt
+  https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n-cls.pt
+
+Photos : bus.jpg et zidane.jpg, exemples du dépôt officiel ultralytics/ultralytics,
+figés au commit e544db43838fd058370cad216bf82a7639f29b35 (version 8.3.221).
+  https://github.com/ultralytics/ultralytics/tree/e544db43838fd058370cad216bf82a7639f29b35/ultralytics/assets
+Ces images servent à observer le comportement des modèles, pas à mesurer une
+qualité industrielle ni à identifier les personnes photographiées.
+
+LICENCES ET PRÉCAUTIONS DE RÉUTILISATION
+Le dépôt Ultralytics affiche la licence GNU AGPL-3.0. Sa copie intégrale et
+inchangée est fournie dans ressources/licences/ULTRALYTICS_AGPL-3.0.txt :
+  https://github.com/ultralytics/ultralytics/blob/e544db43838fd058370cad216bf82a7639f29b35/LICENSE
+Ultralytics présente également ses conditions de licence sur :
+  https://www.ultralytics.com/license
+
+La présence des photos dans ce dépôt ne démontre pas à elle seule tous les
+droits photographiques. Aucune licence individuelle des photos n'a été
+identifiée dans ces fichiers : elles ne sont pas présentées comme appartenant
+au domaine public ni comme libres de tout droit. Pour une diffusion ou un
+produit distinct, vérifier les droits applicables et remplacer si nécessaire
+les exemples par des photos dont vous maîtrisez les droits.
+
+Les empreintes ont été calculées après téléchargement des sources officielles.
+Elles servent à détecter un changement ; ce ne sont pas des signatures de l'éditeur.
+Ne charger que des poids .pt de confiance : leur lecture peut désérialiser des
+objets Python. Le cours n'ouvre aucun modèle fourni depuis une source arbitraire.
+
+COMPRENDRE UNE IMAGE ET OPENCV
+Lecture, représentation et opérations élémentaires :
+  https://docs.opencv.org/4.x/dc/d2e/tutorial_py_image_display.html
+  https://docs.opencv.org/4.x/d3/df2/tutorial_py_basic_ops.html
+Conversions de couleur, notamment BGR vers RGB :
+  https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html
+Redimensionnement et transformations géométriques :
+  https://docs.opencv.org/4.x/da/d6e/tutorial_py_geometric_transformations.html
+Seuillage des intensités :
+  https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html
+
+CLASSIFICATION ET DÉTECTION
+YOLO11, modèles préentraînés et tailles d'entrée :
+  https://docs.ultralytics.com/models/yolo11/
+Classification et objets Results / Probs :
+  https://docs.ultralytics.com/tasks/classify/
+  https://docs.ultralytics.com/reference/engine/results/#ultralytics.engine.results.Probs
+Prédiction, format des images, seuil de confiance et objets Boxes :
+  https://docs.ultralytics.com/modes/predict/
+  https://docs.ultralytics.com/reference/engine/results/#ultralytics.engine.results.Boxes
+Jeux de données utilisés pour le préentraînement (pas fournis avec ce cours) :
+  https://docs.ultralytics.com/datasets/classify/imagenet/
+  https://docs.ultralytics.com/datasets/detect/coco/
+
+INSTALLATION ET VERSIONS
+PyTorch 2.6.0 / torchvision 0.21.0, roues CPU pour Windows :
+  https://pytorch.org/get-started/previous-versions/#v260
+Métadonnées des versions Ultralytics et OpenCV sélectionnées :
+  https://pypi.org/project/ultralytics/8.3.221/
+  https://pypi.org/project/opencv-python/4.12.0.88/
+Notebooks locaux dans VS Code :
+  https://code.visualstudio.com/docs/datascience/jupyter-notebooks
+
+Les liens donnent les sources primaires pour approfondir. Le contenu du cours
+reformule les concepts ; il ne reproduit pas de longs passages de documentation.

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "note": "Empreintes SHA-256 mesurées sur les téléchargements des sources officielles indiquées. Elles figent les fichiers utilisés dans ce cours, sans constituer une signature de l'éditeur.",
+  "assets": [
+    {
+      "path": "modeles/yolo11n.pt",
+      "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "bytes": 5613764,
+      "usage": "Détection COCO, 80 classes, YOLO11n préentraîné.",
+      "license_note": "Modèle Ultralytics : consulter AGPL-3.0 et les conditions Ultralytics. Voir SOURCES.txt."
+    },
+    {
+      "path": "modeles/yolo11n-cls.pt",
+      "url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n-cls.pt",
+      "sha256": "c62d41bf9625777760018bf914d2e6cd472420ccd01706d97a61cb6c82502bd7",
+      "bytes": 5790624,
+      "usage": "Classification ImageNet, 1 000 classes, YOLO11n-cls préentraîné.",
+      "license_note": "Modèle Ultralytics : consulter AGPL-3.0 et les conditions Ultralytics. Voir SOURCES.txt."
+    },
+    {
+      "path": "donnees/images/bus.jpg",
+      "url": "https://raw.githubusercontent.com/ultralytics/ultralytics/e544db43838fd058370cad216bf82a7639f29b35/ultralytics/assets/bus.jpg",
+      "sha256": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+      "bytes": 137419,
+      "usage": "Photographie d'exemple fournie dans le dépôt officiel Ultralytics.",
+      "license_note": "Le dépôt affiche AGPL-3.0 ; aucune licence photographique individuelle n'est identifiée dans ce fichier. Ne pas présenter la photo comme appartenant au domaine public ni comme libre de tout droit. Voir SOURCES.txt."
+    },
+    {
+      "path": "donnees/images/zidane.jpg",
+      "url": "https://raw.githubusercontent.com/ultralytics/ultralytics/e544db43838fd058370cad216bf82a7639f29b35/ultralytics/assets/zidane.jpg",
+      "sha256": "16d73869e3267a7d4ed00de8e860833bd1657c1b252e94c0c348277adc7b6edb",
+      "bytes": 50427,
+      "usage": "Photographie d'exemple fournie dans le dépôt officiel Ultralytics, pas une tâche d'identification des personnes.",
+      "license_note": "Le dépôt affiche AGPL-3.0 ; aucune licence photographique individuelle n'est identifiée dans ce fichier. Ne pas présenter la photo comme appartenant au domaine public ni comme libre de tout droit. Voir SOURCES.txt."
+    },
+    {
+      "path": "ressources/licences/ULTRALYTICS_AGPL-3.0.txt",
+      "url": "https://raw.githubusercontent.com/ultralytics/ultralytics/e544db43838fd058370cad216bf82a7639f29b35/LICENSE",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "bytes": 34523,
+      "usage": "Copie intégrale, inchangée, de la licence affichée par le dépôt Ultralytics.",
+      "license_note": "GNU Affero General Public License, version 3."
+    }
+  ]
+}

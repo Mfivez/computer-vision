@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320" role="img" aria-label="Classer une image : choisir une étiquette globale">
+<title>Classer une image : choisir une étiquette globale</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#405879"/></marker></defs>
+<style>text{font-family:Arial,DejaVu Sans,sans-serif;fill:#182d45}.title{font-size:25px;font-weight:700}.label{font-size:20px;font-weight:700}.small{font-size:18px}.tiny{font-size:16px}.arrow{stroke:#405879;stroke-width:3;fill:none;marker-end:url(#arrow)}.box{fill:#edf3fb;stroke:#9bb1ce;stroke-width:2}</style>
+<rect width="1000" height="320" rx="18" fill="#fbfcff"/>
+<text x="32" y="40" class="title">Classer une image : choisir une étiquette globale</text>
+
+<rect class="box" x="30" y="80" width="260" height="154" rx="12"/>
+<text x="50" y="112" class="label">Une photo de rue</text>
+<rect x="58" y="138" width="130" height="51" rx="5" fill="#8ba7cf"/><rect x="69" y="148" width="24" height="19" fill="white"/><rect x="103" y="148" width="24" height="19" fill="white"/><rect x="137" y="148" width="36" height="19" fill="white"/>
+<circle cx="83" cy="194" r="10" fill="#405879"/><circle cx="163" cy="194" r="10" fill="#405879"/>
+<circle cx="231" cy="151" r="10" fill="#d88636"/><path d="M231 163 v29 m0-18 -16 14 m16-14 16 14 m-16 4 -12 22 m12-22 12 22" stroke="#d88636" stroke-width="5"/>
+<path class="arrow" d="M306 155 H356"/>
+<rect class="box" x="372" y="80" width="250" height="154" rx="12"/>
+<text x="392" y="112" class="label">1 000 scores</text>
+<text x="392" y="145" class="small">Un score par catégorie</text>
+<text x="392" y="178" class="small">Un classement de réponses</text>
+<text x="392" y="211" class="tiny">Pas une liste d'objets repérés</text>
+<path class="arrow" d="M639 155 H689"/>
+<rect x="705" y="80" width="265" height="154" rx="12" fill="#e9f4ed" stroke="#8eb19a" stroke-width="2"/>
+<text x="725" y="112" class="label">Une proposition</text>
+<text x="725" y="148" class="small">Le nom arrivé en tête</text>
+<text x="725" y="184" class="small">Aucune position</text>
+<text x="725" y="213" class="small">Aucun comptage</text>
+<text x="32" y="280" class="small">La même image contient plusieurs objets : une étiquette ne décrit pas toute la scène.</text>
+
+</svg>

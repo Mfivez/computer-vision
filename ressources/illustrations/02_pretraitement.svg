@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="404" viewBox="0 0 1000 404" role="img" aria-label="La préparation de l’image fait partie de la méthode">
+<title>La préparation de l’image fait partie de la méthode</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#405879"/></marker></defs>
+<style>text{font-family:Arial,DejaVu Sans,sans-serif;fill:#182d45}.title{font-size:25px;font-weight:700}.label{font-size:20px;font-weight:700}.small{font-size:18px}.tiny{font-size:16px}.arrow{stroke:#405879;stroke-width:3;fill:none;marker-end:url(#arrow)}.box{fill:#edf3fb;stroke:#9bb1ce;stroke-width:2}</style>
+<rect width="1000" height="404" rx="18" fill="#fbfcff"/>
+<text x="32" y="40" class="title">La préparation de l’image fait partie de la méthode</text>
+
+<rect x="50" y="80" width="170" height="218" rx="4" fill="#e9b77f" stroke="#b87a32" stroke-width="2"/>
+<rect x="50" y="104" width="170" height="170" fill="#afc4e1"/>
+<path d="M50 104 H220 M50 274 H220" stroke="#405879" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="135" y="99" class="tiny" text-anchor="middle">Bord perdu</text>
+<text x="135" y="190" class="small" text-anchor="middle">Centre conservé</text>
+<text x="135" y="294" class="tiny" text-anchor="middle">Bord perdu</text>
+<text x="45" y="330" class="small">Exemple : photo verticale</text>
+<path class="arrow" d="M242 189 H291"/>
+<rect class="box" x="312" y="104" width="290" height="185" rx="12"/>
+<text x="332" y="141" class="label">predict(..., imgsz=224)</text>
+<text x="332" y="178" class="small">Redimensionner / recadrer</text>
+<text x="332" y="212" class="small">Organiser les canaux couleur</text>
+<text x="332" y="246" class="small">Mettre les valeurs à l'échelle</text>
+<text x="332" y="273" class="tiny">Ces étapes sont prises en charge.</text>
+<path class="arrow" d="M624 189 H675"/>
+<rect x="701" y="104" width="170" height="170" fill="#afc4e1" stroke="#405879" stroke-width="2"/>
+<text x="784" y="179" class="label" text-anchor="middle">224 × 224</text><text x="784" y="210" class="small" text-anchor="middle">pixels</text>
+<text x="684" y="306" class="small">Entrée du réseau</text>
+<text x="32" y="369" class="small">Ne pas ajouter un prétraitement arbitraire : il peut modifier l'information vue par le modèle.</text>
+
+</svg>

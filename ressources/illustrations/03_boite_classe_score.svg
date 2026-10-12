@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="480" viewBox="0 0 1000 480" role="img" aria-labelledby="title desc">
+<title id="title">Une détection = une boîte + une classe + un score</title><desc id="desc">Schéma fictif. Origine en haut à gauche. Une boîte va de x1=20,y1=30 à x2=140,y2=150 : largeur 120 et hauteur 120 pixels. Classe person et score 0,82 sont proposés par le modèle.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#243b53"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#243b53;font-size:20px}.title{font-size:28px;font-weight:bold}.small{font-size:17px}.bold{font-weight:bold}.card{fill:#fff;stroke:#ccd8e3;stroke-width:2}.axis{stroke:#243b53;stroke-width:2;marker-end:url(#arrow)}</style>
+<rect width="1000" height="480" rx="18" fill="#f4f8fc"/>
+<text x="30" y="42" class="title">Une détection = une boîte + une classe + un score</text>
+
+<rect x="35" y="75" width="490" height="345" rx="12" class="card"/>
+<path d="M85 117 H475" class="axis"/><path d="M85 117 V384" class="axis"/>
+<text x="55" y="103" class="small">(0, 0)</text><text x="451" y="102">x →</text><text x="43" y="376">y ↓</text>
+<rect x="125" y="177" width="240" height="200" fill="#d6f2f6" stroke="#07849a" stroke-width="4"/>
+<circle cx="245" cy="217" r="19" fill="#627d98"/><path d="M245 241 V309 M205 267 H285 M245 309 L214 357 M245 309 L276 357" stroke="#627d98" stroke-width="15" fill="none"/>
+<circle cx="125" cy="177" r="6" fill="#ef7a24"/><circle cx="365" cy="377" r="6" fill="#ef7a24"/>
+<text x="141" y="163" class="small">(x1, y1) = (20, 30)</text><text x="255" y="406" class="small">(x2, y2) = (140, 150)</text>
+<rect x="565" y="82" width="395" height="90" rx="10" class="card"/>
+<text x="586" y="118" class="bold">Boîte : [20, 30, 140, 150]</text><text x="586" y="149" class="small">Deux coins, en pixels de l'image.</text>
+<rect x="565" y="187" width="395" height="90" rx="10" class="card"/>
+<text x="586" y="223" class="bold">Classe : person = personne</text><text x="586" y="254" class="small">Une catégorie, pas une identité.</text>
+<rect x="565" y="292" width="395" height="112" rx="10" class="card"/>
+<text x="586" y="329" class="bold">Score : 0,82</text><text x="586" y="360" class="small">Un indice du modèle.</text><text x="586" y="386" class="small">Ce n'est pas une preuve de présence.</text>
+<text x="36" y="454" class="small">Exemple schématique, valeurs inventées pour lire le format ; dessin non à l'échelle.</text>
+
+</svg>

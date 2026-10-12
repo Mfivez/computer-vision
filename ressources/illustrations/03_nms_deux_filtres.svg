@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" role="img" aria-labelledby="title desc">
+<title id="title">Deux filtres, deux questions différentes</title><desc id="desc">Exemple fictif pour une même classe person. Scores A 0,91 B 0,82 C 0,76 D 0,20. Un seuil score de 0,25 retire D. A et B ont une IoU 0,80, supérieure au seuil NMS 0,70 : B est retirée, A et C restent.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#243b53"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#243b53;font-size:20px}.title{font-size:28px;font-weight:bold}.small{font-size:17px}.bold{font-weight:bold}.card{fill:#fff;stroke:#ccd8e3;stroke-width:2}.axis{stroke:#243b53;stroke-width:2;marker-end:url(#arrow)}</style>
+<rect width="1000" height="470" rx="18" fill="#f4f8fc"/>
+<text x="30" y="42" class="title">Deux filtres, deux questions différentes</text>
+
+<text x="35" y="85">Toutes ces propositions portent la classe person. Valeurs fictives.</text>
+<rect x="35" y="111" width="290" height="283" rx="12" class="card"/>
+<text x="54" y="149" class="bold">1. Filtrer les scores</text>
+<text x="54" y="184">Seuil = 0,25</text><text x="54" y="226">A : 0,91 → garder</text><text x="54" y="261">B : 0,82 → garder</text><text x="54" y="296">C : 0,76 → garder</text><text x="54" y="331">D : 0,20 → retirer</text>
+<path d="M334 250 H375" class="axis"/>
+<rect x="388" y="111" width="278" height="283" rx="12" class="card"/>
+<text x="406" y="149" class="bold">2. Réduire les doublons</text><text x="406" y="184">Seuil IoU = 0,70</text>
+<rect x="412" y="218" width="90" height="99" fill="#d6f2f6" stroke="#07849a" stroke-width="3"/>
+<rect x="422" y="218" width="90" height="99" fill="none" stroke="#d05a0b" stroke-width="3" stroke-dasharray="6 4"/>
+<rect x="566" y="230" width="69" height="87" fill="#d6f2f6" stroke="#07849a" stroke-width="3"/>
+<text x="415" y="348" class="small">A et B : IoU = 0,80</text><text x="562" y="216" class="small">C</text>
+<path d="M677 250 H718" class="axis"/>
+<rect x="733" y="111" width="233" height="283" rx="12" class="card"/>
+<text x="752" y="149" class="bold">Résultat : A et C</text><text x="752" y="198">A bat B au score.</text><text x="752" y="239" class="small">B recouvre trop A :</text><text x="752" y="268" class="small">elle est supprimée.</text><text x="752" y="317" class="small">C est ailleurs :</text><text x="752" y="346" class="small">elle est conservée.</text>
+<text x="35" y="441" class="small">La NMS compare des propositions entre elles ; elle ne connaît pas les véritables objets.</text>
+
+</svg>

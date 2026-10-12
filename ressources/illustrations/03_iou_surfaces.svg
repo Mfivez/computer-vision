@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="490" viewBox="0 0 1000 490" role="img" aria-labelledby="title desc">
+<title id="title">IoU : quelle part des deux boîtes est commune ?</title><desc id="desc">Deux rectangles de quatre unités par quatre. Ils se recouvrent sur deux unités par quatre. Intersection 8, union 16 plus 16 moins 8 égale 24. IoU égale 8 sur 24 soit environ 0,33.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#243b53"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#243b53;font-size:20px}.title{font-size:28px;font-weight:bold}.small{font-size:17px}.bold{font-weight:bold}.card{fill:#fff;stroke:#ccd8e3;stroke-width:2}.axis{stroke:#243b53;stroke-width:2;marker-end:url(#arrow)}</style>
+<rect width="1000" height="490" rx="18" fill="#f4f8fc"/>
+<text x="30" y="42" class="title">IoU : quelle part des deux boîtes est commune ?</text>
+
+<text x="38" y="91">A = [0, 0, 4, 4]</text><text x="277" y="91">B = [2, 0, 6, 4]</text>
+<rect x="45" y="130" width="280" height="240" fill="#8cdbed" fill-opacity="0.55" stroke="#07849a" stroke-width="4"/>
+<rect x="185" y="130" width="280" height="240" fill="#ffbc85" fill-opacity="0.55" stroke="#d05a0b" stroke-width="4"/>
+<rect x="185" y="130" width="140" height="240" fill="#9b8abf" fill-opacity="0.7"/>
+<text x="84" y="239" class="bold">A seule</text><text x="358" y="239" class="bold">B seule</text>
+<text x="204" y="220" class="bold">Partie</text><text x="200" y="250" class="bold">commune</text><text x="232" y="285" class="bold">8</text>
+<path d="M45 397 H465" stroke="#243b53" stroke-width="2"/><path d="M45 389 V406 M185 389 V406 M325 389 V406 M465 389 V406" stroke="#243b53" stroke-width="2"/>
+<text x="40" y="431">0</text><text x="180" y="431">2</text><text x="320" y="431">4</text><text x="460" y="431">6</text>
+<rect x="510" y="112" width="453" height="298" rx="12" class="card"/>
+<text x="533" y="155">Aire de A : 4 × 4 = 16</text><text x="533" y="192">Aire de B : 4 × 4 = 16</text><text x="533" y="229">Intersection : 2 × 4 = 8</text>
+<text x="533" y="277" class="bold">Union : 16 + 16 − 8 = 24</text><text x="533" y="318" class="small">On ne compte la partie commune qu'une fois.</text>
+<text x="533" y="373" class="title">IoU = 8 / 24 ≈ 0,33</text>
+<text x="35" y="464" class="small">0 : aucun recouvrement. 1 : deux boîtes identiques. Aucune classe ni aucun score dans ce calcul.</text>
+
+</svg>
